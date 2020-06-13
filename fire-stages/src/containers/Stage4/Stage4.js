@@ -8,7 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
 import RescueInfo from './RescueInfo';
-import Map from './Map';
+import Map from '../common/Map';
 import FlowBar from '../common/Flow';
 import AppBar from '../common/AppBar';
 import Command from './Command';
