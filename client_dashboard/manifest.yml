@@ -1,0 +1,7 @@
+---
+path: build/
+memory: 256M
+instances: 1
+domain: us-south.cf.appdomain.cloud
+disk_quota: 1024M
+buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git

@@ -31,11 +31,11 @@ import { firebase, config } from '../../config/firebase';
                 anchor : "bottom",
                 iconURL : "http://icons.iconarchive.com/icons/google/noto-emoji-travel-places/64/42545-ambulance-icon.png"
               })
-          } else if (locations[i].type == "congestion") {
+          } else if (locations[i].type == "cfr") {
             markers.push({
                 location : locations[i].lat + "," + locations[i].lng,
                 anchor : "center",
-                iconURL : "https://i.imgur.com/okNQgji.png"
+                iconURL : "https://img.icons8.com/officel/32/000000/person-male.png"
               })
           }
       }
@@ -85,23 +85,6 @@ import { firebase, config } from '../../config/firebase';
         {alerts.map(alert => (
           <Marker size="tiny" location={alert.location} iconURL={alert.iconURL} anchor={alert.anchor}/>
         ))}
-        <Path
-            points={[
-                '37.860362, -122.266963',
-                '37.861407, -122.258985',
-                '37.865138, -122.258433',
-                '37.865705, -122.253913',
-                '37.865935, -122.251351',
-                '37.870545, -122.252582',
-            ]}
-        />      
-        <Path
-            points={[
-                '37.861407, -122.258985',
-                '37.861786, -122.253530',
-            ]}
-            color="red"
-        />      
       </StaticGoogleMap>
     );
   }
