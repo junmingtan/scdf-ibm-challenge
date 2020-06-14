@@ -64,7 +64,7 @@ export default function Dispatch() {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <AppBar name="Dispatch"/>
+      <AppBar name="myResponders"/>
       <main className={classes.content}>
         
         <div className={classes.appBarSpacer} />
