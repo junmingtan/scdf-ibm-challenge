@@ -11,7 +11,8 @@ We are tackling the problem statement of "Integrating with a smart environment".
 ## Pitch Video
 https://youtube.com
 ## Software Architecture
-![Software Architecture](https://user-images.githubusercontent.com/35727668/84583192-a6e26080-ae28-11ea-9cd7-d8dae56bb2ec.png)
+![Software Architecture](https://user-images.githubusercontent.com/35727668/84583383-bb275d00-ae2a-11ea-9a1b-f378a179ef48.png)
+* Implementation not present in prototype due to time constraint during the challenge
 ## Detailed Solution
 i actually think the idea would work and can fit into IBM cloud - so we scrap instagram / their own app for videos on scene and put it into our stage 4. then stage 3 will be a GPS location of all the myResponders people . then early prevention we just pitch the ioT device broadcast to the command centre into the start screen. so its the same stages we went through but we update stage 3 and stage 4 to integrate. then the cloud functions will be to scrap the stage 4 when triggered and to put the script for stage 3. then maybe stage 1 and 2 can be compressed or deleted. So in the sense the command centre will be the early prevention + tracking other responders to help. then can also add the idea of the myResponders will get live help thing
 A short description of the problem you are tackling, how technology can help, as well as the idea your team is proposing*
@@ -25,8 +26,15 @@ $ ./setup.sh
 ```
 
 ## Live demo 
-(Link to an actual working demo/website)
+https://renaissance-io.us-south.cf.appdomain.cloud/
+* Hosted on IBM Cloud
 ## Technology used
 - ReactJs
-- Firebase Firestore
+- IBM Cloud
 - IBM Cloud Functions
+- IBM Cloudant*
+- IBM Watson*
+- Docker*
+- NodeJS*
+- TensorFlow*
+* Implementation not present in prototype due to time constraint during the challenge
