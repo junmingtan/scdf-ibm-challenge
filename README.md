@@ -21,7 +21,7 @@ Our solution to early intervention is via the use of multiple IoT devices and se
 
 ### Command centre stages
 A command centre personnel could click through the centralised system to track a current accident and decide on the response from SCDF based on all the data. Throughout the accident duration, the personnel can click between stages for to obtain the various data. 
-#### Stage 1 - Emergency Overview
+### Stage 1 - Emergency Overview
 Insert SS of stage 1
 <br/>
 This stage allows the command centre personnel to have an overview of the situation.
@@ -52,6 +52,7 @@ Use live demo to run through the prototype
 
 ## Live demo 
 https://renaissance-io.us-south.cf.appdomain.cloud/
+<br/>
 \* Hosted on IBM Cloud
 ## Technology used
 - ReactJs
