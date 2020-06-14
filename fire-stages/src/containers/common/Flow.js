@@ -71,10 +71,9 @@ const ColorlibConnector = withStyles({
   
     const icons = {
       1: <NotificationImportantIcon />,
-      2: <PhoneForwardedIcon/>,
-      3: <SupervisorAccountIcon />,
-      4: <WhatshotIcon/>,
-      5: <PostAddIcon/>
+      2: <SupervisorAccountIcon />,
+      3: <WhatshotIcon/>,
+      4: <PostAddIcon/>
     };
   
     return (
@@ -106,7 +105,7 @@ const ColorlibConnector = withStyles({
   };
   
   function getSteps() {
-    return ['Emergency Triggered', 'Notify', 'Dispatch', 'Mission', 'Post Accident'];
+    return ['Emergency Triggered', 'myResponders', 'Mission', 'Post Accident'];
   }
 
   export default function FireHome(props) {
