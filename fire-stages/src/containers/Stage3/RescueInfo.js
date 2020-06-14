@@ -53,23 +53,23 @@ export default function RescueInfo() {
 }
   return (
     <React.Fragment>
-      <Title>Rescue Information</Title>
+      <Title>Map Information</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
           <TableCell align="center">Label</TableCell>
-            <TableCell align="center">Location</TableCell>
-            <TableCell align="center">Injuries</TableCell>
+            <TableCell align="center">Role</TableCell>
             <TableCell align="center">Status</TableCell>
+            <TableCell align="center">Remarks</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {alerts.map(alert => (
             <TableRow key={alert.label}>
               <TableCell align="center">{alert.label}</TableCell>
-              <TableCell align="center">{alert.location}</TableCell>
-              <TableCell align="center">{alert.injuries}</TableCell>
+              <TableCell align="center">{alert.role}</TableCell>
               <TableCell align="center">{alert.status}</TableCell>
+              <TableCell align="center">{alert.remarks}</TableCell>
             </TableRow>
           ))}
         </TableBody>

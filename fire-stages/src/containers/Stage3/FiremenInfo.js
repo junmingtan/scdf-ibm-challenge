@@ -164,43 +164,24 @@ export default function IoTInfo() {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
-          <FlowBar type="4" />
+          <FlowBar type="3" />
           <Grid container spacing={6}>
-            {firemenInfo.map(({ name, video, id, rank, role, temp, heart, fatigue }, index) => (
+            {firemenInfo.map(({ name, link, id, filter }, index) => (
               <Grid item key={index} xs={4}>
                 <Card className={classes.card}>
                   <Card className={classes.video}>
-                  <YouTube video={video} autoplay height="100%" width="100%" muted />
+                    <YouTube video={link} autoplay height="100%" width="100%" 
+                    muted controls={false} annotations={false} showRelatedVideos={false} 
+                    modestBranding={true} showInfo={false}/>
                   </Card>
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h6" component="h3">
                       <b>{name}</b>
                     </Typography>
                     <Typography>
-                      Rank:
-                  <span>&nbsp;</span>
-                      {rank}
+                      {filter}
                     </Typography>
-                    <Typography>
-                      Role:
-                  <span>&nbsp;</span>
-                      {role}
-                    </Typography>
-                  <Typography>
-                      Temperature:
-                  <span>&nbsp;</span>
-                      {temp}
-                    </Typography>
-                    <Typography>
-                      Heart Rate:
-                  <span>&nbsp;</span>
-                      {heart}
-                    </Typography>
-                    <Typography>
-                      Fatigue:
-                  <span>&nbsp;</span>
-                      {fatigue}
-                    </Typography>
+
                   </CardContent>
                 </Card>
               </Grid>

@@ -6,7 +6,6 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import Map from '../common/Map';
 import LargeMap from './LargeMap';
 import FlowBar from '../common/Flow';
 import AppBar from '../common/AppBar';

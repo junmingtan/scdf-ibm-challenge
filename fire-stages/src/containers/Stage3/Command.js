@@ -65,21 +65,20 @@ export default function Command() {
       <Table size="small">
         <TableHead>
           <TableRow>
-          <TableCell align="center">Progress</TableCell>
-            <TableCell align="center">Mission Time</TableCell>
-            <TableCell align="center">Temperature</TableCell>
-            <TableCell align="center">Crew</TableCell>
-            <TableCell align="center">Vehicles</TableCell>
+          <TableCell align="center">Source</TableCell>
+            <TableCell align="center">Tag</TableCell>
+            <TableCell align="center">Type</TableCell>
+            <TableCell align="center">Status</TableCell>
+            <TableCell align="center"></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {alerts.map(alert => (
             <TableRow key={alert.id}>
-              <TableCell align="center">{alert.progress}</TableCell>
-              <TableCell align="center">{alert.time}</TableCell>
-              <TableCell align="center">{alert.temperature}</TableCell>
-              <TableCell align="center">{alert.crew}</TableCell>
-              <TableCell align="center">{alert.vehicle}</TableCell>
+              <TableCell align="center">{alert.source}</TableCell>
+              <TableCell align="center">{alert.tag}</TableCell>
+              <TableCell align="center">{alert.type}</TableCell>
+              <TableCell align="center">{alert.status}</TableCell>
             </TableRow>
           ))}
         </TableBody>
