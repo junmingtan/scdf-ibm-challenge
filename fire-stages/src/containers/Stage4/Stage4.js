@@ -10,7 +10,7 @@ import FlowBar from '../common/Flow';
 import AppBar from '../common/AppBar';
 import Copyright from '../common/Copyright';
 import MissionStatistics from './MissionStatistics'
-import AssetsDeployed from './AssetsDeployed'
+import AssetsNotified from './AssetsNotified'
 import FireMap from './FireMap';
 
 // firebase API
@@ -90,7 +90,7 @@ export default function PostAccident() {
           </Grid>
           <Container maxWidth="lg" className={classes.container}>
             <Grid container spacing={3}>
-              <AssetsDeployed/>
+              <AssetsNotified/>
             </Grid>
           </Container>
           <Box pt={4}>

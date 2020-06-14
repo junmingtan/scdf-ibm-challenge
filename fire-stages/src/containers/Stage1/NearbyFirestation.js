@@ -108,13 +108,11 @@ export default function AlertInfo() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {alerts.map(alert => (
             <TableRow>
-              <TableCell>{alert.location}</TableCell>
-              <TableCell align="center">{alert.distance}</TableCell>
-              <TableCell align="center">{alert.time}</TableCell>
-            </TableRow>
-          ))}
+            <TableCell>Bukit Panjang Fire Post</TableCell>
+            <TableCell align="center">1.2</TableCell>
+            <TableCell align="center">7 mins</TableCell>
+          </TableRow>
         </TableBody>
       </Table>
     </React.Fragment>
