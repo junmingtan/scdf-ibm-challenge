@@ -8,7 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
 import RescueInfo from './RescueInfo';
-import Map from '../common/Map';
+import Map from './Map';
 import FlowBar from '../common/Flow';
 import AppBar from '../common/AppBar';
 import Command from './Command';
@@ -44,7 +44,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     overflow: 'auto',
     flexDirection: 'column',
-    height: '30vh'
+    height: '40vh'
   },
   firemenPaper: {
     padding: theme.spacing(2),
@@ -52,7 +52,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     overflow: 'auto',
     flexDirection: 'column',
-    height: '40vh'
+    height: '30vh'
   },
   fixedHeight: {
     height: 240,
@@ -69,7 +69,7 @@ export default function FireHome() {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
-          <FlowBar type="4" />
+          <FlowBar type="3" />
           <Grid container spacing={3}>
             {/* left  - Map */}
             <Grid item xs={12} md={5} lg={6}>

@@ -20,7 +20,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        511 Innovation Engineering
+      SCDF X IBM Lifesavers Innovation Challenge
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}

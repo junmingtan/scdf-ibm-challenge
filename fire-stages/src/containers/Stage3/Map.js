@@ -8,24 +8,24 @@ function categorise_alerts(allAlerts) {
   const categorised_alerts = []
 
   for (let i = 0; i < allAlerts.length; ++i) {
-    if (allAlerts[i].task === "Leader") {
+    if (allAlerts[i].task === "scdf") {
       categorised_alerts.push({
         location : allAlerts[i].lat + "," + allAlerts[i].lng,
-        color : "green",
+        color : "orange",
         label : "L"
       });
-    } else if (allAlerts[i].task === "Fire") {
+    } else if (allAlerts[i].task === "Accident") {
       categorised_alerts.push({
         location : allAlerts[i].lat + "," + allAlerts[i].lng,
         color : "red",
-        label : "F"
+        label : "A"
       });
-    // } else if (allAlerts[i].type === "Accident") {
-    //   categorised_alerts.push({
-    //     location : allAlerts[i].lat + "," + allAlerts[i].lng,
-    //     color : "orange",
-    //     label : "A"
-    //   });
+    } else if (allAlerts[i].task === "iot") {
+      categorised_alerts.push({
+        location : allAlerts[i].lat + "," + allAlerts[i].lng,
+        color : "green",
+        label : "I"
+      });
     } else {
       categorised_alerts.push({
         location : allAlerts[i].lat + "," + allAlerts[i].lng,
@@ -76,7 +76,7 @@ export default function Map() {
   }
 
   return (
-    <StaticGoogleMap size="450x600" className="img-fluid" apiKey={config["apiKey"]}>
+    <StaticGoogleMap size="450x500" className="img-fluid" apiKey={config["apiKey"]}>
       {alerts.map(alert => (
         <Marker color={alert.color} label={alert.label} location={alert.location} />
       ))}
